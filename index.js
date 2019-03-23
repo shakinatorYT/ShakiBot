@@ -10,7 +10,7 @@ bot.on('ready', function () {
     console.log("Je suis prêt à être utilisé.")
     bot.user.setActivity('rien').catch(console.error)
 });
-
+bot.login(token)
 bot.on('guildMemberAdd', member => {
     member.createDM().then(channel => {
         return channel.send('Bienvenue sur le serveur de Alexpgm' + member.displayName)
