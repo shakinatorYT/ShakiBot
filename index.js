@@ -31,10 +31,7 @@ bot.on('message', msg => {
         msg.channel.send("https://www.youtube.com/channel/UCOhGDL7a89EkC91H6Kp-Alg?view_as=subscriber")
         console.log("Une personne a demandé pour aller sur ta chaine.")
     }
-bot.on('ban', msg => {
-    if (msg.content === "bon ban"){
-        msg.reply("Tu veut revenir.")
-
+ 
 });
 
 /*
