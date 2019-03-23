@@ -24,7 +24,7 @@ bot.on('message', msg => {
     if (msg.content === "ban"){
         msg.reply("Ne reviens plus." + member.displayName)
     }
-    if (msg.content.match(/salut/i)) {
+    if (msg.content.match(/mpx en force/i)) {
             msg.reply('Je suis d\'accord avec toi.')
     }
     if (msg.content === prefix + "site"){
