@@ -13,7 +13,7 @@ bot.on('ready', function () {
 bot.login(token)
 bot.on('guildMemberAdd', member => {
     member.createDM().then(channel => {
-        return channel.send('Bienvenue sur le serveur ce bot est fait par MPX_SHAKI' + member.displayName)
+        return channel.send('Bienvenue sur le serveur, va lire les règles et appui sur la réaction pour avoir ton grade' + member.displayName)
         console.log(`${member.displayName} à rejoind le serveur.`)
     }).catch(console.error)
 });
