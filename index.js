@@ -20,9 +20,9 @@ bot.on('guildMemberAdd', member => {
 
 
 
-bot.on('message', msg => {
-    if (msg.content === "bonjour"){
-        msg.reply("Heureux de te revoir parmis nous.")
+bot.on('ban', msg => {
+    if (msg.content === "ban"){
+        msg.reply("Ne reviens plus.")
     }
     if (msg.content.match(/salut/i)) {
             msg.reply('Je suis d\'accord avec toi.')
