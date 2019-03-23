@@ -18,11 +18,6 @@ bot.on('guildMemberAdd', member => {
     }).catch(console.error)
 });
 
-bot.on('message', function (message){
-    if (ban.match(message)){
-        return ban.action(message)
-    }
-});
 
 
 bot.on('message', msg => {
