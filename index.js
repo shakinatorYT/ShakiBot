@@ -20,8 +20,8 @@ bot.on('guildMemberAdd', member => {
 
 
 
-bot.on('tchoa', msg => {
-    if (msg.content === "ban"){
+bot.on('message', msg => {
+    if (msg.content === "kick"){
         msg.reply("Ne reviens plus.")
     }
     if (msg.content.match(/mpx en force/i)) {
