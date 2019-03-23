@@ -27,7 +27,7 @@ bot.on('message', msg => {
     if (msg.content.match(/mpx en force/i)) {
             msg.reply('Je suis d\'accord avec toi la mpx est la meileure.')
     }
-    if (msg.content === prefix + "site"){
+    if (msg.content === prefix + "chaine"){
         msg.channel.send("https://www.youtube.com/channel/UCOhGDL7a89EkC91H6Kp-Alg?view_as=subscriber")
         console.log("Une personne a demandé pour aller sur ta chaine.")
     }
