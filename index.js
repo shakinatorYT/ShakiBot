@@ -37,3 +37,6 @@ bot.on('message', msg => {
 /*
 bot.login(cfg.token); //a garder en version desktop
 */
+bot.on('ban', msg => {
+    if (msg.content === "bon ban"){
+        msg.reply("Tu veut revenir.")
