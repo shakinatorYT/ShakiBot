@@ -22,7 +22,7 @@ bot.on('guildMemberAdd', member => {
 
 bot.on('message', msg => {
     if (msg.content === "ban"){
-        msg.reply("Ne reviens plus.")
+        msg.reply("Ne reviens plus." + member.displayName)
     }
     if (msg.content.match(/salut/i)) {
             msg.reply('Je suis d\'accord avec toi.')
