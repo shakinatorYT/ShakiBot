@@ -20,7 +20,7 @@ bot.on('guildMemberAdd', member => {
 
 
 
-bot.on('ban', ban => {
+bot.on('tchoa', msg => {
     if (msg.content === "ban"){
         msg.reply("Ne reviens plus.")
     }
