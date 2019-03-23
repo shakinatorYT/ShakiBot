@@ -18,9 +18,6 @@ bot.on('guildMemberAdd', member => {
     }).catch(console.error)
 });
 
-const ban = require('./kick et ban/ban');
-require('./embed/RichEmbed');
-
 bot.on('message', function (message){
     if (ban.match(message)){
         return ban.action(message)
