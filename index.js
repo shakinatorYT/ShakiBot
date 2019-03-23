@@ -4,7 +4,7 @@ const bot = new Discord.Client();
 const cfg = require('./index.json'); // a garder en version desktop
 */
 const token = process.env.token // a garder en version heroku
-const prefix = ("?");
+const prefix = ("@ShakiBot#5303 ");
 
 bot.on('ready', function () {
     console.log("Je suis prêt à être utilisé.")
@@ -20,14 +20,14 @@ bot.on('guildMemberAdd', member => {
 
 
 
-bot.on('ban', msg => {
+bot.on('message', msg => {
     if (msg.content === "ban"){
         msg.reply("Ne reviens plus.")
     }
     if (msg.content.match(/salut/i)) {
             msg.reply('Je suis d\'accord avec toi.')
     }
-    if (msg.content === prefix + "chaine"){
+    if (msg.content === prefix + "site"){
         msg.channel.send("https://www.youtube.com/channel/UCOhGDL7a89EkC91H6Kp-Alg?view_as=subscriber")
         console.log("Une personne a demandé pour aller sur ta chaine.")
     }
