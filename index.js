@@ -13,7 +13,7 @@ bot.on('ready', function () {
 bot.login(token)
 bot.on('guildMemberAdd', member => {
     member.createDM().then(channel => {
-        return channel.send('Bienvenue sur le serveur de la team MPX' + member.displayName)
+        return channel.send('Bienvenue sur le serveur ce bot est fait par MPX_SHAKI' + member.displayName)
         console.log(`${member.displayName} à rejoind le serveur.`)
     }).catch(console.error)
 });
@@ -25,7 +25,7 @@ bot.on('message', msg => {
         msg.reply("Ne reviens plus.")
     }
     if (msg.content.match(/mpx en force/i)) {
-            msg.reply('Je suis d\'accord avec toi.')
+            msg.reply('Je suis d\'accord avec toi la mpx est la meileure.')
     }
     if (msg.content === prefix + "site"){
         msg.channel.send("https://www.youtube.com/channel/UCOhGDL7a89EkC91H6Kp-Alg?view_as=subscriber")
